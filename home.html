@@ -23,10 +23,24 @@
             <h3 class="text-center">We only have 5 tables! Book your seat before they all are gone!</h3>
             <hr>
             <div class="text-center">
-                <a href="./tables.html"> <button class="btn btn-primary btn-lg">
+                <a href="/tables"> <button class="btn btn-primary btn-lg" id="tablebutton">
                         <span class="fas fa-utensils"></span> View Tables</button></a>
-                <a href="./reserve.html"><button class="btn btn-danger btn-lg"><span class="fas fa-calendar-check"></span>
-                        Make Reservation</button></a>
+                <a href="/reserve"><button class="btn btn-danger btn-lg" id="reservebutton">
+                        <span class="fas fa-calendar-check"></span> Make Reservation</button></a>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+    
+    
+        $(".tablebutton").on("click", function () {
+            window.location = "./tables.html";
+        });
+
+        $(".reservebutton").on("click", function () {
+            window.location = "./reserve.html";
+        });
+
+
+    </script>
+</body>
